@@ -1,0 +1,13 @@
+import React from 'react';
+import { AnimateType, IModalProps, IModalHeaderProps, IModalFooterProps, IModalCloseProps } from './IFModalTypes';
+import ModalCloseIcon from './ModalCloseIcon';
+import ModalPortal from './ModalPortal';
+import ModalHeader from './ModalHeader';
+import ModalFooter from './ModalFooter';
+import ModalClose from './ModalClose';
+import { useEventBus } from './ModalBusUtils';
+import './styles.scss';
+declare const Modal: React.FC<IModalProps>;
+export type { AnimateType, IModalProps, IModalHeaderProps, IModalFooterProps, IModalCloseProps, };
+export { Modal, ModalPortal, ModalClose, ModalFooter, ModalHeader, ModalCloseIcon, useEventBus, };
+export default Modal;
